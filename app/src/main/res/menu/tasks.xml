@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/eating"
+        android:icon="@drawable/eating"
+        android:title="Eating" />
+    <item android:id="@+id/medication"
+        android:icon="@drawable/medication"
+        android:title="Medication" />
+    <item android:id="@+id/meditate"
+        android:icon="@drawable/meditate"
+        android:title="Meditate" />
+    <item android:id="@+id/sleep"
+        android:icon="@drawable/sleep"
+        android:title="Sleep" />
+    <item android:id="@+id/water"
+        android:icon="@drawable/water"
+        android:title="Water" />
+
+</menu>

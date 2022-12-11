@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navbar"
+    app:startDestination="@id/eating">
+
+    <fragment
+        android:id="@+id/eating"
+        android:name="uwgb.cs292.blue.eating"
+        android:label="Eating"
+        tools:layout="@layout/fragment_eating">
+        <action
+            android:id="@+id/action_eating_to_medication"
+            app:destination="@id/medication" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/medication"
+        android:name="uwgb.cs292.blue.medication"
+        android:label="Medication"
+        tools:layout="@layout/fragment_medication">
+        <action
+            android:id="@+id/action_medication_to_meditate"
+            app:destination="@id/meditate" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/meditate"
+        android:name="uwgb.cs292.blue.meditate"
+        android:label="Meditate"
+        tools:layout="@layout/fragment_meditate">
+        <action
+            android:id="@+id/action_meditate_to_sleep"
+            app:destination="@id/sleep" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sleep"
+        android:name="uwgb.cs292.blue.sleep"
+        android:label="Sleep"
+        tools:layout="@layout/fragment_sleep">
+        <action
+            android:id="@+id/action_sleep_to_water"
+            app:destination="@id/water" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/water"
+        android:name="uwgb.cs292.blue.water"
+        android:label="Water"
+        tools:layout="@layout/fragment_water" />
+
+</navigation>
