@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".eating">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Eating" />
+    <ImageView
+        android:id="@+id/eating_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:contentDescription="Background Image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eating_background" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/eating_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have You Eaten Today?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/breakfast_cb"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Breakfast"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eating_header" />
+
+    <CheckBox
+        android:id="@+id/lunch_cb"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="Lunch"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast_cb" />
+
+    <CheckBox
+        android:id="@+id/dinner_cb"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:text="Dinner"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunch_cb" />
+</androidx.constraintlayout.widget.ConstraintLayout>
