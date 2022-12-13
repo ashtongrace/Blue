@@ -19,5 +19,7 @@ public class Main extends AppCompatActivity {
         NavController nc = Navigation.findNavController(this, R.id.nav_host_fragment);
         BottomNavigationView bnv = findViewById(R.id.bnv);
         NavigationUI.setupWithNavController(bnv, nc);
+
+        System.out.println("This is a test for git");
     }
 }
