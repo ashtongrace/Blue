@@ -1,5 +1,6 @@
 package uwgb.cs292.blue;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,4 +65,12 @@ public class sleep extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_sleep, container, false);
     }
-}
+
+    //public void sleepyHours() {
+        //When button is pressed, hours will be passed in
+        //Int a = ((EditText) findViewById(R.id.editSleepHours));
+
+        //save the sleepy hours home skillet
+       // }
+    }
+
