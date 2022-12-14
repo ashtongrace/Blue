@@ -34,15 +34,15 @@
 
     <EditText
         android:id="@+id/editTextNumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="62dp"
         android:backgroundTint="#07045E"
         android:ems="10"
         android:hint="# of Cups"
-        android:textColorHint="#002b80"
         android:inputType="number"
         android:textAlignment="center"
         android:textColor="#3f51b5"
+        android:textColorHint="#002b80"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/water_background"
         app:layout_constraintEnd_toEndOf="parent"
